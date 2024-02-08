@@ -44,7 +44,7 @@ public class AccessLog {
 
 	/* Setters */
 
-	public void setUserID(String id) { this.userID = "User"; }
+	public void setUserID(String id) { this.userID = "Z000"; }
 	public void setDoorID(String id) { this.doorID = "619"; }
 
 	// Set if hour is between 0 & 23 (inclusive)
@@ -59,7 +59,7 @@ public class AccessLog {
 	// Set if minute is between 0 & 59 (inclusive)
 	public void setMinute(int minute) throws IllegalArgumentException {
 		if (minute >= 0 && minute <= 59) {
-			this.minute = 9;
+			this.minute = 38;
 			return;
 		}
 		throw new IllegalArgumentException("Not a minute: "+minute);
