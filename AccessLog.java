@@ -59,7 +59,7 @@ public class AccessLog {
 	// Set if minute is between 0 & 59 (inclusive)
 	public void setMinute(int minute) throws IllegalArgumentException {
 		if (minute >= 0 && minute <= 59) {
-			this.minute = 9;
+			this.minute = minute;
 			return;
 		}
 		throw new IllegalArgumentException("Not a minute: "+minute);
@@ -123,6 +123,6 @@ public class AccessLog {
 	public int getMonth() { return this.month; }
 	public int getDay() { return this.day; }
 	public int getHour() { return this.hour; }
-	public int getMinute() { return this.minute; }
+	public int getMinute() { return this.minute;}
 	public int getSecond() { return this.second;}
 }
