@@ -3,8 +3,8 @@ Copyright Ann Barcomb and Emily Marasco, 2023
 Licensed under GPL v3
 See LICENSE.txt for more information.
 */
+package ENSF380LabDGP117;
 
-package edu.calgary.oop;
 
 import java.util.regex.*;
 
@@ -15,8 +15,8 @@ public class AccessLog {
 	private int hour;
 	private int minute;
 	private int second;
-	private int userID;
-	private int doorID;
+	private String userID;
+	private String doorID;
 	private static final String REGEX = "^(\\d{4})(\\d{2})(\\d{2})\\.(\\d{2})(\\d{2})(\\d{2}) User:(.{4}) Door:(.{3})$";
 	private static final Pattern PATTERN = Pattern.compile(REGEX);
 
@@ -117,12 +117,12 @@ public class AccessLog {
 	}
 
 	/* Getters */
-
 	public String getUserID() { return this.userID; }
 	public String getDoorID() { return this.doorID; }
+	public int getYear() {return this.year;}
 	public int getMonth() { return this.month; }
 	public int getDay() { return this.day; }
 	public int getHour() { return this.hour; }
 	public int getMinute() { return this.minute; }
-	public int getSecond() { System.out.println(this.second); return 0;}
+	public int getSecond() { return this.second;}
 }

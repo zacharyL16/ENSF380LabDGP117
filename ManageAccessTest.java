@@ -5,7 +5,7 @@ Licensed under GPL v3
 See LICENSE.txt for more information.
 */
 
-package edu.ucalgary.oop;
+package ENSF380LabDGP117;
 
 import org.junit.Test;
 import org.junit.Assert;
