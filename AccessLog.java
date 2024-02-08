@@ -38,7 +38,7 @@ public class AccessLog {
 			this.userID = match.group(7);
 			this.doorID = match.group(8);
 		} else {
-			System.out.println("IndexOutOfBoundsException: Not a valid logline: " + logLine);
+			throw new IllegalArgumentException("Not a valid logline: " + logLine);
 		}	
 	}
 
