@@ -34,7 +34,7 @@ public class AccessLog {
 			this.setDay(Integer.valueOf(match.group(3))); 
 			this.setHour(Integer.valueOf(match.group(4)));
 			this.setMinute(Integer.valueOf(match.group(5)));
-			this.setSecond(Integer.valueOf(match.group(5)));
+			this.setSecond(Integer.valueOf(match.group(6)));
 			this.userID = match.group(7);
 			this.doorID = match.group(8);
 		} else {
@@ -124,5 +124,5 @@ public class AccessLog {
 	public int getDay() { return this.day; }
 	public int getHour() { return this.hour; }
 	public int getMinute() { return this.minute;}
-	public int getSecond() { return this.second;}
+	public int getSecond() { return Integer.valueOf(second);}
 }
