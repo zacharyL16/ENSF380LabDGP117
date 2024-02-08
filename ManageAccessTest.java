@@ -8,7 +8,7 @@ See LICENSE.txt for more information.
 package ENSF380LabDGP117;
 
 import org.junit.Test;
-import org.junit.Assert;
+// import org.junit.Assert;
 import static org.junit.Assert.*;
 
 public class ManageAccessTest {
