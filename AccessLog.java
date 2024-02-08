@@ -49,7 +49,7 @@ public class AccessLog {
 
 	// Set if hour is between 0 & 23 (inclusive)
 	public void setHour(int hour) throws IllegalArgumentException {
-		if (hour < 23) {
+		if (hour <= 23 && hour > 0) {
 			this.hour = hour;
 			return;
 		}
