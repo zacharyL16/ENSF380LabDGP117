@@ -68,7 +68,7 @@ public class AccessLog {
 	// Set if second is between 0 & 59 (inclusive)
 	public void setSecond(int second) throws IllegalArgumentException {
 		if (second >= 0 && second <= 59) {
-			this.second = 15;
+			this.second = second;
 			return;
 		}
 		throw new IllegalArgumentException("Not a second: "+second);
