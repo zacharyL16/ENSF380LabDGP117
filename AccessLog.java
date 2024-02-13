@@ -84,6 +84,7 @@ public class AccessLog {
 		}
 		this.year = year;
 		return;
+
 	}
 
 	// Set month; month must be between 1 & 12 (inclusive)
